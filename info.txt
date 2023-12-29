@@ -1,0 +1,6 @@
+npm init
+index.js
+i express 
+ejs -> server side rendering.
+making folder structure.
+making server
