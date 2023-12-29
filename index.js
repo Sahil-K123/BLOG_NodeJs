@@ -1,10 +1,11 @@
 const express = require('express')
 const PORT = process.env.PORT || 3000;
 const path = require('path');
-const userRoute = require('./routes/user');
 const  mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const { checkForAuthenticationCookie } = require('./middleware/auth');
+const userRoute = require('./routes/user');
+const blogRoute = require('./routes/blog');
 
 
 const app = express();
@@ -17,7 +18,6 @@ app.set('views', path.resolve("./views"));
 
 
 app.use(express.urlencoded({ extended: false }))
-app.use('/user', userRoute)
 app.use(cookieParser())
 app.use(checkForAuthenticationCookie("token"))
 
@@ -27,6 +27,8 @@ app.get('/', (req, res) => {
     })
 })
 
+app.use('/user', userRoute);
+app.use('/blog', blogRoute);
 
 app.listen(PORT, () => {
     console.log(`Server is listening on the port: ${PORT}`)
