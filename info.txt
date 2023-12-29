@@ -8,3 +8,9 @@ making server
 
 mongoose documentation -> pre
 now for hasing the password we are using crypto hash built in package
+
+now using static in mongoose for validating passoword for sign in.
+
+
+some error is coming of INVALID_ARG_TYPE
+resolved by async and await.

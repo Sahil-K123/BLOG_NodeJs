@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
+app.use(express.urlencoded({ extended: false }))
 app.use('/user', userRoute)
 
 
