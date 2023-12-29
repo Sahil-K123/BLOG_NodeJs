@@ -14,3 +14,8 @@ now using static in mongoose for validating passoword for sign in.
 
 some error is coming of INVALID_ARG_TYPE
 resolved by async and await.
+
+services and utils.
+
+
+now in /signin instead of returning user we can return token
