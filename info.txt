@@ -4,3 +4,7 @@ i express
 ejs -> server side rendering.
 making folder structure.
 making server
+
+
+mongoose documentation -> pre
+now for hasing the password we are using crypto hash built in package
