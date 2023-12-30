@@ -19,3 +19,7 @@ services and utils.
 
 
 now in /signin instead of returning user we can return token
+
+
+
+now at this point express dont know abt the public folder thats why it is not showing the image so we need to tell the express that u can use this file statically.
