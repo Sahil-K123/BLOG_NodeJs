@@ -9,15 +9,16 @@ const blogRoute = require('./routes/blog');
 const Blog = require('./models/blog');
 
 
-const app = express();
+const app = express(); //express instance
 
-mongoose.connect("mongodb://localhost:27017/blogify").then(e => console.log('MongoDB Connected'))
-
+mongoose.connect("mongodb+srv://sahilkarwani0213:dC0v4otDtrmxPyYw@cluster0.sb09v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(e => console.log('MongoDB Connected'))
+// pY2Se1egKYUcYtaS
+// 
 
 app.set('view engine', 'ejs')
 app.set('views', path.resolve("./views"));
 
-
+ 
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(checkForAuthenticationCookie("token"));

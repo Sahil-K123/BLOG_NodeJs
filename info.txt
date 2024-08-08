@@ -23,3 +23,27 @@ now in /signin instead of returning user we can return token
 
 
 now at this point express dont know abt the public folder thats why it is not showing the image so we need to tell the express that u can use this file statically.
+
+
+#INTERVIEW SPECIFIC:
+Middleware is a request handler that allows you to intercept and manipulate requests and responses before they reach route handlers. They are the functions that are invoked by the Express.js routing layer.
+
+It is a flexible tool that helps in adding functionalities like logging, authentication, error handling, and more to Express applications. 
+
+ques-> why we are writing const USER = mongoose.model("user", userSchema)
+In Mongoose, when you define a model using mongoose.model, the first argument you provide is the singular name of the collection in your database.
+
+Here's why:
+
+Singular Form: The first argument is typically in singular form because Mongoose automatically pluralizes the model name to determine the collection name in MongoDB. For example, if you define a model with the name "User", Mongoose will create a collection named "users" in the database.
+
+Convention: It's a convention to use the singular form for the model name to maintain consistency and readability in your code. This convention makes it clear that you're dealing with a single document or item of that type.
+
+Naming Convenience: By using a singular name, it aligns better with individual documents in the collection. Each document represents a single instance of the defined model, hence the singular form.
+
+So, in your example, "user" is the singular name of the collection. Mongoose will use this name to automatically pluralize it and determine the name of the collection in MongoDB, unless explicitly specified otherwise.
+
+
+
+
+

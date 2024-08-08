@@ -1,5 +1,5 @@
 const JWT = require("jsonwebtoken");
-const secret = "$uperRajaBhaiya";
+const secret = "$uperRajaBhaiya";  // required for editing the token
 
 function createTokenForUser(user) {
     const payload = {
