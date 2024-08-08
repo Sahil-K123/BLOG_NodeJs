@@ -9,9 +9,15 @@ const blogRoute = require('./routes/blog');
 const Blog = require('./models/blog');
 
 
+
 const app = express(); //express instance
 
-mongoose.connect("mongodb+srv://sahilkarwani0213:dC0v4otDtrmxPyYw@cluster0.sb09v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(e => console.log('MongoDB Connected'))
+require('dotenv').config();
+
+const username = process.env.DB_USERNAME;
+const password = process.env.DB_PASSWORD;
+
+mongoose.connect("mongodb+srv://${username}:${password}@cluster0.sb09v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(e => console.log('MongoDB Connected'))
 // pY2Se1egKYUcYtaS
 // 
 
