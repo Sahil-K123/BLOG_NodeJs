@@ -1,5 +1,6 @@
 {
   "name": "blog_nodejs",
+  "homepage": "https://Sahil-K123.github.io/BLOG_NodeJs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,6 +15,7 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "gh-pages": "^6.1.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.3",
     "multer": "^1.4.5-lts.1"
